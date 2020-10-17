@@ -1,0 +1,106 @@
+/* Global Layout Set-up */
+* { 
+    box-sizing: border-box;
+  }
+    
+/* Header Styling */
+.promo {
+  text-align: center;
+  background-repeat:no-repeat;
+  background-color:#ffb3b3;
+  color:#000066;
+  padding:5px;
+  font-size: 0.8rem;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.notify {
+  background-color: white;
+  overflow: hidden;
+}
+
+.brandname {
+  color: #000066;
+  overflow: hidden;
+  text-align: left;
+  font-weight: 700;
+  background: white;
+  text-align: center;
+}
+
+a {
+  text-decoration: none; 
+  color: #000066;
+}
+
+.main-nav {
+  width: 100%;
+  min-height: 30px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  background: white;
+
+}
+
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+
+.profile-image {
+  width: 900px;
+  height: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 120px;
+  }
+
+.ourbrand {
+    padding-top: 150px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 2.5rem;
+}
+
+.title {
+    padding-top: 150px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 2.5rem;
+ }
+
+ .theslate {
+  padding-top: 150px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 2.5rem;
+  }
+
+  .mid {
+    padding-top: 150px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        }
+
+.flex {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-around;
+  margin: 0 auto;
+}
