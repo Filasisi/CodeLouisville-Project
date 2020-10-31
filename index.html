@@ -3,9 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>Sequoia by Fiyin</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="projectstyle.css">
   <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
+  
+
   
   <body>
 
@@ -44,35 +47,35 @@
 
     
 
-      <section class="flex">
-        <div>
-          <h1 class="title">Our Vision</h1>    
+      <div class="flex">
+        <div class="tit vision">
+          <h1>Our Vision</h1>    
         </div>
 
-        <div>
-          <h1 class="theslate">/</h1>    
+        <div class="for vision">
+          <h1>/</h1>    
         </div>
 
-        <div>
-          <p class="mid">I'm a paragraph. Click here to add your own text and edit me. 
-            I’m a great place for you to tell a story and let your users 
-            know a little more about you. 
+        <div class="par vision">
+          <p>I'm a paragraph. Click here to add your own text <br>
+            and edit me. I’m a great place for you to tell a <br>
+            story and let your users know a little more about you. 
           </p>    
         </div>
-      </section>
+      </div>
 
 
       <section class="flex">
-        <div>
+        <div class="paragraph-1">
           <h1 class="title">Creators Bio</h1> 
-          <p> 
+          <p class="pad"> 
               I'm a paragraph. Click here to add your own text and edit me. 
               It’s easy. Just click “Edit Text” or double click me to add your 
               own content and make changes to the font. Feel free to drag and
               drop me anywhere you like on your page. I’m a great place for you
               to tell a story and let your users know a little more about you.
           </p>
-          <p> 
+          <p class="pad"> 
               This is a great space to write a long text about your company and 
               your services. You can use this space to go into a little more 
               detail about your company. Talk about your team and what services 
@@ -84,21 +87,18 @@
         </div>
 
       
-        <div>
+        <div class="img-bio">
           <img src="images/creator.jpg" alt="Brand Owner's Picture" id="bio-image">    
         </div>
       </section>
 
 
+    
       <section class="flex">
         <div>
-          <img src="images/mission1.jpg" alt="Brand Owner's Picture" id="mis-image">    
-        </div>
-
-      
-        <div>
+        <div class="paragraph-2">
           <h1 class="title">Mission</h1> 
-          <p>
+          <p class="pad">
             I'm a paragraph. Click here to add your own text and edit me. It’s easy. 
             Just click “Edit Text” or double click me to add your own content and make 
             changes to the font. Feel free to drag and drop me anywhere you like on your
@@ -106,7 +106,7 @@
             a little more about you.
           </p>   
 
-          <p>
+          <p class="pad">
             This is a great space to write a long text about your company and your services.
             You can use this space to go into a little more detail about your company. Talk 
             about your team and what services you provide. Tell your visitors the story of how 
@@ -114,19 +114,27 @@
             competitors. Make your company stand out and show your visitors who you are.
           </p>  
         </div>
+        
+        
+        <div class="img-mis">
+          <img src="images/IMG_3991.JPG" alt="Brand Owner's Picture" id="mis-image">    
+        </div>
+
+      </div>
+        
       </section>
 
       <section class="flex">
-        <div>
+        <div class="paragraph-3">
           <h1 class="title">Creative Process</h1>
-          <p> 
+          <p class="pad"> 
             I'm a paragraph. Click here to add your own text and edit me. 
             It’s easy. Just click “Edit Text” or double click me to add your 
             own content and make changes to the font. Feel free to drag and
             drop me anywhere you like on your page. I’m a great place for you
             to tell a story and let your users know a little more about you.
         </p>
-        <p> 
+        <p class="pad"> 
             This is a great space to write a long text about your company and 
             your services. You can use this space to go into a little more 
             detail about your company. Talk about your team and what services 
@@ -138,71 +146,88 @@
         </div>
 
       
-        <div>
+        <div class="img-cre">
           <img src="images/creative1.jpg" alt="Creative Process of Making the Dresses" id="creative-image">   
         </div>
       </section>
 
-      <div class="flex">
-        <div>
-          <H1>JOIN THE LIST AND GET 10% OFF YOUR FIRST ORDER </H1>
-           <p> Be the first to know about new arrivals, special events, and more.</p>
-      
-            <form action="index.html" method="post"> 
+      <div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col" style="background-color:lavender;">
+            
+            <h3 class="pad">JOIN THE LIST AND GET 10% OFF YOUR FIRST ORDER </h3>
+            <p class="pad"> Be the first to know about new arrivals, special events, and more.</p>
+            
+            
+            <form class="ml-3 mr-3 px-1">
+                    <div class="form-row mb-3">
+                      <div class="col">
+                        <label for="inputAddress">First Name</label>
+                        <input type="text" class="form-control" placeholder="First name">
+                      </div>
+                      <div class="col">
+                        <label for="inputAddress">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last name">
+                      </div>
+                    </div>
+                  
+                   <div class="form-group">
+                      <label for="mail">Email</label>
+                      <input type="email" class="form-control" id="mail" placeholder="example@sequoia.com">
+                    </div>
+
+                                     
+                   <button type="button" class="btn btn-info btn-block col-sm-2 col-lg-12">Button</button>
+                  
+                  </form></div>
+            <div class="col" style="background-color:lavender;"> 
+              <div class="row" style="background-color:lavender;"><div class="col" style="background-color:lavender;">
+              <nav>
+                    <ul class="nav-bottom">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Shop</a></li>
+                      <li><a href="#">Size Guide</a></li>
+                      <li><a href="#">Our Brand</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                 </nav>
+              </div>
+              <div class="col" style="background-color:lavender;">
+              <nav>
+                    <ul class="nav-bottom">
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Shipping & Returns</a></li>
+                      <li><a href="#">Store Policy</a></li>
+                      <li><a href="#">Payment Methods</a></li>
+                    </ul>
+                 </nav>
+              </div>
+              </div>
+            
+            
+            <div class="row"style="background-color:lavender;">
+            <ul class="list-group list-group-horizontal offset-xs offset-sm-2 offset-md-4 offset-lg-4 nav-bottom">
+                  <li class="ml-1 mr-1"><a href="#" class="social instagram">Instagram</a></li>
+                  <li class="ml-1 mr-1"><a href="#" class="social facebook">Facebook</a></li>
+                  <li class="ml-1 mr-1"><a href="#" class="social youtube">Youtube</a></li>
+                  <li class="ml-1 mr-1"><a href="#" class="social pinterest">Pinterest</a></li>
+                  <li class="ml-1 mr-1"><a href="#" class="social github">Github</a></li>
+            </ul>
+            </div>
+            </div>
+          </div>
+        </div>
         
-             
-                <fieldset> 
-             
-                    <label for="firstname">First Name</label>
-                    <input type="text" id="firstname" name="user_firstname">
-
-                    <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname" name="user_lastname">
-
-                    <label for="mail">Email</label>
-                    <input type="email" id="mail" name="user_email">
-                       
-                </fieldset>
-            </form>  
-
-      <button type="submit">  Send </button>
-
-    </div>
-
-        <div>
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Size Guide</a></li>
-              <li><a href="#">Our Brand</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <div>
-          <nav>
-            <ul>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Shipping & Returns</a></li>
-              <li><a href="#">Store Policy</a></li>
-              <li><a href="#">Payment Methods</a></li>
-            </ul>
-          </nav>
-        </div>
-
-  </div>
+  </div>  <!--This is a div that wrappers the area. -->
 
  </div>  <!--This is a div the wrappers all the contain in the main area. -->
       
-    <footer>
-      <ul>
-        <li><a href="#" class="social twitter">Twitter</a></li>
-        <li><a href="#" class="social linkedin">LinkedIn</a></li>
-        <li><a href="#" class="social github">Github</a></li>
-      </ul>
-      <p class="copyright">Copyright 2015, Jane Smith</p>
+    <footer class="footer">
+          <p class="copyright">Copyright 2015, Jane Smith</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   </body>
   </html>

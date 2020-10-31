@@ -1,106 +1,216 @@
 /* Global Layout Set-up */
 * { 
-    box-sizing: border-box;
-  }
-    
+  box-sizing: border-box;
+  
+}
+  
 /* Header Styling */
 .promo {
-  text-align: center;
-  background-repeat:no-repeat;
-  background-color:#ffb3b3;
-  color:#000066;
-  padding:5px;
-  font-size: 0.8rem;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+text-align: center;
+background-repeat:no-repeat;
+background-color:#ffe6e6;
+color:#000066;
+padding:5px;
+font-size: 0.8rem;
+font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .notify {
-  background-color: white;
-  overflow: hidden;
+background-color: white;
+overflow: hidden;
 }
 
 .brandname {
-  color: #000066;
-  overflow: hidden;
-  text-align: left;
-  font-weight: 700;
-  background: white;
-  text-align: center;
+color: #000066;
+overflow: hidden;
+text-align: left;
+font-weight: 700;
+background: white;
+text-align: center;
 }
 
 a {
-  text-decoration: none; 
-  color: #000066;
+text-decoration: none; 
+color: #000066;
 }
 
 .main-nav {
-  width: 100%;
-  min-height: 30px;
-  position: fixed;
-  text-align: center;
-  top: 0;
-  left: 0;
+width: 100%;
+min-height: 30px;
+position: fixed;
+text-align: center;
+top: 0;
+left: 0;
+
+}
+
+.main {
+width: 100%;
+text-align: center;
+top: 0;
+left: 0;
+align-content: center;
 
 }
 
 .nav {
-  display: flex;
-  justify-content: space-around;
-  font-weight: 700;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-  background: white;
+display: flex;
+justify-content: space-around;
+font-weight: 700;
+list-style-type: none;
+margin: 0 auto;
+padding: 0;
+background: white;
 
 }
 
 .nav li {
-  padding: 5px 10px 10px 10px;
+padding: 5px 10px 10px 10px;
 }
 
 .profile-image {
-  width: 900px;
-  height: 600px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 120px;
-  }
+width: 70%;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 120px;
+}
 
 .ourbrand {
-    padding-top: 150px;
-    padding-bottom: 25px;
-    text-align: center;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 2.5rem;
+  padding-top: 150px;
+  padding-bottom: 75px;
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 2.5rem;
 }
 
 .title {
-    padding-top: 150px;
-    padding-bottom: 25px;
-    text-align: center;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 2.5rem;
- }
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 2.5rem;
+}
 
- .theslate {
+.theslate {
+padding-top: 50px;
+padding-bottom: 50px;
+text-align: center;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 2.5rem;
+}
+
+.mid {
   padding-top: 150px;
   padding-bottom: 25px;
   text-align: center;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 2.5rem;
-  }
+      }
 
-  .mid {
-    padding-top: 150px;
-    padding-bottom: 25px;
-    text-align: center;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+.vision {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  
         }
 
+      /* Body */
+
+.body {
+text-align: center;
+}
+
+.paragraph-1, .paragraph-2, .paragraph-3 {
+padding: 25px 25px;
+background-color: #ffe6e6;
+}
+
+
+p {padding: 5px 5px 10px 10px;
+ line-height: 1.9rem;}
+
+
+
+#mis-image, #bio-image, #creative-image { 
+width: 100%;
+height: auto;}
+
+.buttom, .buttom-2 {
+background-color:#000066;
+color: white;
+}
+
+ul.nav-bottom {
+list-style-type: none;
+}  
+
+.footer {
+padding: 2px 2px;
+background-color: #ffe6e6;
+text-align: center;
+}
+
+/* Styles for larger screens */
+
+@media screen and (min-width: 576px) {
+  
 .flex {
-  display: flex;
-  max-width: 1200px;
-  justify-content: space-around;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.pad {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.paragraph-1, .paragraph-3, .buttom-2 {
+  float: left;
+  width: 50%;
+}
+
+/* #bio-image { 
+  float: right;
+  width: 100%;
+
+} */
+
+.img-bio, .img-cre, .buttom, .paragraph-2 { 
+float: right;
+width: 50%;
+
+}
+
+.tit {
+  width: 40%;
+  text-align: right;
+  margin: auto;
+}
+
+.for {
+  width: 20%;
+  text-align: center;
+  margin: auto;
+}
+
+.par {
+  width: 40%;
+  text-align: left;
+}
+
+    .img-mis { 
+    float: left;
+    width: 50%;
+   
+
+}
+
+.buttom-2, .buttom-3 {
+ width: 25%;
+}
+
+
 }
