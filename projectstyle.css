@@ -1,6 +1,8 @@
 /* Global Layout Set-up */
 * { 
     box-sizing: border-box;
+   
+    
     
   }
     
@@ -87,8 +89,8 @@ a {
 }
 
 .title {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 2.5rem;
@@ -134,7 +136,7 @@ p {padding: 5px 5px 10px 10px;
 
 
 
-#mis-image, #bio-image, #creative-image { 
+#mis-image, #bio-image, #creative-image, #mis-imagemd, #bio-imagemd, #creative-imagemd { 
   width: 100%;
   height: auto;}
 
@@ -163,9 +165,120 @@ ul.nav-bottom {
  
  }
 
+ 
+ /* .position { position: initial;
+  
+  z-index: 600;
+ } */
+
+/* Styles for Small screens */
+
+@media screen and (max-width: 996px) {
+  
+ .profile-image1 {display: none;
+  
+}
+   
+.profile-image2 {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 120px;
+  }
+
+.img-biomd, .img-mismd, .img-cremd {display: none;
+
+}
+
+.img-bio, .img-mis, .img-cre {display: block;
+                             
+
+}
+.parr {
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  word-wrap: break-word;
+ 
+}
+
+}
+
+
+
+@media screen and (min-width: 996px) {
+
+  .flex {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+
+.tit {
+  width: 40%;
+  text-align: right;
+  margin: auto;
+}
+
+.for {
+  width: 20%;
+  text-align: center;
+  margin: auto;
+}
+.par {
+  width: 40%;
+  text-align: left;
+  word-wrap: break-word;
+  padding-right: 18%;
+}
+
+.parr {
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+  word-wrap: break-word;
+ 
+}
+
+
+.img-mismdx, .paragraph-1, .paragraph-3, .buttom-2 {
+  float: left;
+  width: 50%;
+}
+
+.img-biomdx, .img-cremdx, .buttom, .paragraph-2 { 
+  float: right;
+  width: 50%;
+
+}
+
+
+.img-bio, .img-mis, .img-cre, .profile-image1  {display: none;
+
+  }
+  
+  .profile-image2 {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 120px;
+    }
+   
+   
+   
+    }
+  
+
+
+
 /* Styles for larger screens */
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 1200px) {
     
   .flex {
       display: flex;
@@ -183,7 +296,7 @@ ul.nav-bottom {
     padding-right: 30%;
   }
 
-  .paragraph-1, .paragraph-3, .buttom-2 {
+  .paragraph-1, .paragraph-3, .buttom-2, .img-mis {
     float: left;
     width: 50%;
   }
@@ -215,14 +328,17 @@ ul.nav-bottom {
   .par {
     width: 40%;
     text-align: left;
+    word-wrap: break-word;
+    padding-right: 18%;
   }
 
-      .img-mis { 
-      float: left;
-      width: 50%;
-     
-
-}
+  .parr {
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: center;
+    word-wrap: break-word;
+   
+  }
 
 .buttom-2, .buttom-3 {
    width: 25%;
@@ -250,7 +366,94 @@ ul.nav-bottom {
 
 }
 
-.img-bio, .img-mis, .img-cre  {
+.profile-image1 {
+  width: 80%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 120px;
+  }
+
+  .profile-image2, .img-biomd, .img-mismd, .img-cremd {display: none;
+  
+  }
+
+  .img-bio, .img-cre, .img-mis  {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+        }
+  
+
 }
+   
+
+
+
+
+/* ====================================
+                  Form
+======================================*/
+
+/* Style all input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Style the container for inputs */
+.container {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
 }
