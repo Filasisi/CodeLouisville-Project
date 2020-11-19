@@ -55,66 +55,98 @@
 
 
 
-// ============================
-            // Password
-// ============================
-var myInput = document.getElementById("signuppwd");
-var letter = document.getElementById("letter");
-var capital = document.getElementById("capital");
-var number = document.getElementById("number");
-var length = document.getElementById("length");
+ // =============================================
+            //SignUp Form Validation JS
+  // ==================================================
 
-// When the user clicks on the password field, show the message box
-myInput.onfocus = function() {
-  document.getElementById("message").style.display = "block";
-}
+  var users = [];
+  //validates email address format
 
-// When the user clicks outside of the password field, hide the message box
-myInput.onblur = function() {
-  document.getElementById("message").style.display = "none";
-}
-
-// When the user starts to type something inside the password field
-myInput.onkeyup = function() {
-  // Validate lowercase letters
-  var lowerCaseLetters = /[a-z]/g;
-  if(myInput.value.match(lowerCaseLetters)) {  
-    letter.classList.remove("invalid");
-    letter.classList.add("valid");
-  } else {
-    letter.classList.remove("valid");
-    letter.classList.add("invalid");
+  function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
   }
+
+ 
+  //submit contact us form
+    $('#signupBtn').on('click', function(){
+      var firstname = $('#firstname').val();
+      var lastname = $('#lastname').val();
+      var email = $('#signupEmail').val();
+      var password = $('#signupPass').val();
+
+      if(firstname.length<=2){
+        alert('Please enter a valid firstname with 3 or more characters');
+        return;
+      }
+
+      if(lastname.length<=2){
+        alert('Please enter a valid lastname with 3 or more characters');
+        return;
+      }
+
+      if(isEmail(email)==false){
+        alert('Please enter a valid email');
+        return;
+      }
+
+      if(! (password.length>=6 && password.length<=16)){
+        alert('Please enter a valid password of length 6-16');
+        return;
+      }
+
+      var user = {firstname, lastname, email, password};
+       console.log(user);
+       users.push(user);
+       console.log(users);
+      alert(`${user.firstname}, you have successfully created your account! :).`);
+  })
   
-  // Validate capital letters
-  var upperCaseLetters = /[A-Z]/g;
-  if(myInput.value.match(upperCaseLetters)) {  
-    capital.classList.remove("invalid");
-    capital.classList.add("valid");
-  } else {
-    capital.classList.remove("valid");
-    capital.classList.add("invalid");
+  // =============================================
+            // ContactUs Form Validatation
+  // ==================================================
+
+  var users = [];
+  //validates email address format
+
+  function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
   }
 
-  // Validate numbers
-  var numbers = /[0-9]/g;
-  if(myInput.value.match(numbers)) {  
-    number.classList.remove("invalid");
-    number.classList.add("valid");
-  } else {
-    number.classList.remove("valid");
-    number.classList.add("invalid");
-  }
+ 
+  //submit contact us form
+  // $('#signupForm').on('click', '#signupBtn', function(){
+    $('#submitContactUs').on('click', function(){
+      var firstname = $('#firstname1').val();
+      var lastname = $('#lastname1').val();
+      var email = $('#email').val();
+      var message = $('#messagebox').val();
+
+      if(firstname.length<=2){
+        alert('Please enter a valid firstname with 3 or more characters');
+        return;
+      }
+
+      if(lastname.length<=2){
+        alert('Please enter a valid lastname with 3 or more characters');
+        return;
+      }
+
+      if(isEmail(email)==false){
+        alert('Please enter a valid email');
+        return;
+      }
+
+      if(message.trim().length<=5){
+        alert('Please enter a valid message with 6 or more characters');
+        return;
+      }
+
+      var user = {firstname, lastname, email, message};
+       console.log(user);
+       users.push(user);
+       console.log(users);
+      alert(`${user.firstname}, your message has successfully been sent! We would get back to you within the next 48 hrs :).`);
+  })
   
-  // Validate length
-  if(myInput.value.length >= 8) {
-    length.classList.remove("invalid");
-    length.classList.add("valid");
-  } else {
-    length.classList.remove("valid");
-    length.classList.add("invalid");
-  }
-
-  
-}
-
