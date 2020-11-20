@@ -2,7 +2,7 @@
 Sequoia by Fiyin is an online store that specializes in making custom-made female dresses and also has available Ready To Wear (RTW) dresses for customers that need to buy something off the shelve.
 
 There are 3 active pages on the website 
-    - Our Brand 
+    - Our Brand - Media Query affects this page
     - Shop
     - Contact
 
