@@ -44,6 +44,7 @@ a {
   text-align: center;
   top: 0;
   left: 0;
+  z-index: 600;
 
 }
 
@@ -255,6 +256,10 @@ ul.nav-bottom {
 
 }
 
+.reverse {
+  flex-direction: row-reverse;
+}
+
 
 .img-bio, .img-mis, .img-cre, .profile-image1  {display: none;
 
@@ -311,6 +316,10 @@ ul.nav-bottom {
   float: right;
   width: 50%;
 
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }
 
   .tit {

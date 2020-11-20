@@ -14,7 +14,8 @@ Features List
     - Used BOOTSTRAP's column system to bottom area of Page (Lavender)
     - Implemented a navigation menu that expands and collapse (HAMBURGER)
     - Used FLEX to make a one column mobile page to a 2 column
-    - create an JAVASCRIPT ARRAY with useremail and password to Sign In (Please use any username and corresponding its password below to sign in to test feature)
+    - Created a JAVASCRIPT ARRAY with useremail and password to Sign In (Please use any username and corresponding its password below to sign in to test feature)
         Emails = ["fiyin.lasisi@gmail.com",  "komi.lasisi@gmail.com", "adam.smith@gmail.com"];
         Passwords = ["Fiyinlas12%", "Komilas12%", "adamsmi12%"];
-    
+    - Created JAVASCRIPT VALIDATION for the Modal Sign Up form and the contact us page
+      It prompts the users on acceptable input and prompts when all entries are acceptable.

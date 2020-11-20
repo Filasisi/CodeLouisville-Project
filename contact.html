@@ -256,31 +256,30 @@
 
           <div class="forgot p-5">
             <!--Opening Div for Sign In Form  -->
-            <form>
+            <form id=signinForm action="#">
               <div class="form-group pb-2">
-
-                <input type="email" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Your email" required>
-
-              </div>
-
-              <div class="form-group">
-
-                <input type="password" class="form-control rounded-0" id="exampleInputPassword1"
-                  placeholder="Your Password" required>
-
-              </div>
-
-              <div>
-
-                <p class="font-small text-primary d-flex justify-content-end">Forgot <a href="#" class="text-primary">
-                    Password?</a></p>
-
-              </div>
-
-              <button type="submit" class="mt-5 btn btn-primary btn-lg btn-block rounded-pill">Sign In</button>
-
-            </form>
+       
+       <input type="email" class="form-control rounded-0" id="signinEmail" aria-describedby="emailHelp" placeholder="Your email" required>
+       
+       </div>
+       
+       <div class="form-group">
+         
+       <input type="password" class="form-control rounded-0" id="signinPwd" placeholder="Your Password" required>
+       
+       </div>   
+       
+       <div>
+         
+       <p class="font-small text-primary d-flex justify-content-end">Forgot <a href="#" class="text-primary">
+               Password?</a></p> 
+       
+       </div>
+       
+       <button class="mt-5 btn btn-primary btn-lg btn-block rounded-pill" id="signinBtn">Sign In</button>
+       
+       </form>
+       
 
             <div>
 
